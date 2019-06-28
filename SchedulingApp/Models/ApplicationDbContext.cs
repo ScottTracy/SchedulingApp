@@ -10,6 +10,7 @@ namespace SchedulingApp.Models
         // Add an instance IDbSet using the 'new' keyword:
         new public virtual IDbSet<ApplicationRole> Roles { get; set; }
         public virtual IDbSet<Group> Groups { get; set; }
+        public virtual IDbSet<MasterSchedule> Schedules { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection")
