@@ -69,5 +69,7 @@ namespace SchedulingApp.Models
             EntityTypeConfiguration<ApplicationRole> entityTypeConfiguration1 = modelBuilder.Entity<ApplicationRole>().ToTable("AspNetRoles");
             entityTypeConfiguration1.Property((ApplicationRole r) => r.Name).IsRequired();
         }
+
+        public System.Data.Entity.DbSet<SchedulingApp.Models.MasterSchedule> MasterSchedules { get; set; }
     }
 }
